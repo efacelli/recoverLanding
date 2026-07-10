@@ -1,0 +1,171 @@
+:root {
+  /* Paleta extraida del logo y las fotos de RECOVER */
+  --navy-950: #0d2038;
+  --blue-800: #163b63;
+  --blue-700: #2c5486; /* azul de marca (logo) */
+  --blue-500: #3f78b8;
+  --blue-300: #86adda;
+  --ink: #10151c;
+  --paper: #ffffff;
+  --paper-alt: #f4f7fb;
+  --line: #dde5ef;
+
+  --font-display: 'Anton', 'Arial Narrow', sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+
+  --angle: 3.2deg; /* angulo del corte diagonal, motivo repetido de la pagina */
+  --container: 1160px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.eyebrow::before {
+  content: '';
+  width: 22px;
+  height: 3px;
+  background: currentColor;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.display {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 0.98;
+  text-transform: uppercase;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 15px;
+  padding: 14px 28px;
+  border-radius: 999px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: transform 0.18s ease, background 0.18s ease, color 0.18s ease, border-color 0.18s ease;
+  text-decoration: none;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn-primary {
+  background: var(--blue-700);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: var(--blue-500);
+}
+
+.btn-ghost {
+  background: transparent;
+  border-color: currentColor;
+  color: inherit;
+}
+
+.btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* Motivo diagonal: cada seccion "encastra" con la siguiente mediante un
+   corte en angulo, en la misma direccion del trazo del isotipo de RECOVER. */
+.diagonal-top {
+  clip-path: polygon(0 28px, 100% 0, 100% 100%, 0 100%);
+}
+
+.diagonal-bottom {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 28px), 0 100%);
+}
+
+.diagonal-both {
+  clip-path: polygon(0 28px, 100% 0, 100% calc(100% - 28px), 0 100%);
+}
+
+@media (min-width: 768px) {
+  .diagonal-top {
+    clip-path: polygon(0 64px, 100% 0, 100% 100%, 0 100%);
+  }
+  .diagonal-bottom {
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 64px), 0 100%);
+  }
+  .diagonal-both {
+    clip-path: polygon(0 64px, 100% 0, 100% calc(100% - 64px), 0 100%);
+  }
+}
+
+.section {
+  position: relative;
+  padding: 96px 0;
+}
+
+@media (max-width: 767px) {
+  .section {
+    padding: 64px 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+:focus-visible {
+  outline: 3px solid var(--blue-500);
+  outline-offset: 2px;
+}
