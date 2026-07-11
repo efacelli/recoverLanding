@@ -1,8 +1,11 @@
 import { useEffect, useState } from 'react';
+import { WHATSAPP_LINK } from '../whatsapp';
 
 const LINKS = [
   { href: '#servicios', label: 'Servicios' },
   { href: '#enfoque', label: 'Enfoque' },
+  { href: '#resenas', label: 'Reseñas' },
+  { href: '#instagram', label: 'Instagram' },
   { href: '#obras-sociales', label: 'Obras Sociales' },
   { href: '#ubicacion', label: 'Ubicacion' },
 ];
@@ -33,7 +36,7 @@ export function Navbar() {
           ))}
         </nav>
 
-        <a href="https://wa.me/543854735740" className="btn btn-primary navbar__cta">
+        <a href={WHATSAPP_LINK} target="_blank" rel="noreferrer" className="btn btn-primary navbar__cta">
           Reservar evaluacion
         </a>
 
@@ -55,7 +58,7 @@ export function Navbar() {
               {link.label}
             </a>
           ))}
-          <a href="#ubicacion" className="btn btn-primary" onClick={() => setMenuOpen(false)}>
+          <a href={WHATSAPP_LINK} target="_blank" rel="noreferrer" className="btn btn-primary" onClick={() => setMenuOpen(false)}>
             Reservar evaluacion
           </a>
         </div>

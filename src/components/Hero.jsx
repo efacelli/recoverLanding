@@ -14,10 +14,7 @@ export function Hero() {
           100% personalizado segun tu caso y tus necesidades.
         </p>
         <div className="hero__actions">
-          <a href="https://wa.me/543854735740" className="btn btn-primary">
-            Reservar evaluacion
-          </a>
-          <a href="#servicios" className="btn btn-ghost hero__ghost">
+          <a href="#servicios" className="btn btn-primary">
             Ver servicios
           </a>
         </div>

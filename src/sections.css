@@ -324,7 +324,152 @@
   line-height: 1.6;
 }
 
-/* ===== Insurances ===== */
+.services__cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+}
+
+/* ===== Reviews ===== */
+.reviews {
+  background: var(--paper-alt);
+  text-align: center;
+}
+
+.reviews__eyebrow {
+  color: var(--blue-700);
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.reviews__title {
+  font-size: clamp(30px, 4vw, 44px);
+  color: var(--navy-950);
+  margin-bottom: 44px;
+}
+
+.reviews__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  text-align: left;
+}
+
+@media (min-width: 900px) {
+  .reviews__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.review-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.review-card__stars {
+  color: #f5a623;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.review-card__text {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: #3c4757;
+  flex: 1;
+}
+
+.review-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+}
+
+.review-card__name {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--navy-950);
+}
+
+.review-card__time {
+  font-size: 12.5px;
+  color: #8492a3;
+}
+
+.reviews__cta {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.reviews__link {
+  color: var(--navy-950);
+}
+
+/* ===== Instagram ===== */
+.instagram {
+  background: var(--paper);
+  text-align: center;
+}
+
+.instagram__eyebrow {
+  color: var(--blue-700);
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.instagram__title {
+  font-size: clamp(28px, 4vw, 40px);
+  color: var(--navy-950);
+  margin-bottom: 12px;
+  text-transform: none;
+}
+
+.instagram__sub {
+  color: #5b6b80;
+  max-width: 460px;
+  margin: 0 auto 24px;
+}
+
+.instagram__follow {
+  margin-bottom: 48px;
+}
+
+.instagram__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+@media (min-width: 760px) {
+  .instagram__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.instagram__embed {
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--paper-alt);
+  border: 1px solid var(--line);
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.instagram__embed iframe {
+  border: none !important;
+}
 .insurances {
   background: var(--paper);
   text-align: center;

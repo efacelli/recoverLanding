@@ -1,3 +1,5 @@
+import { WHATSAPP_LINK } from '../whatsapp';
+
 const SERVICIOS = [
   {
     titulo: 'Evaluacion kinesica inicial',
@@ -39,6 +41,12 @@ export function Services() {
               <p>{s.texto}</p>
             </article>
           ))}
+        </div>
+
+        <div className="services__cta">
+          <a href={WHATSAPP_LINK} target="_blank" rel="noreferrer" className="btn btn-primary">
+            Reservar evaluacion
+          </a>
         </div>
       </div>
     </section>
