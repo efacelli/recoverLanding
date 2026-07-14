@@ -2,27 +2,27 @@ import { WHATSAPP_LINK } from '../whatsapp';
 
 const SERVICIOS = [
   {
-    titulo: 'Evaluacion kinesica inicial',
+    titulo: 'Evaluacion Kinesica Inicial',
     texto: 'Un diagnostico funcional completo para entender tu lesion y armar el plan indicado desde el primer dia.',
   },
   {
-    titulo: 'Prevencion de lesiones',
+    titulo: 'Prevencion De Lesiones',
     texto: 'Trabajamos sobre los puntos debiles antes de que se conviertan en una lesion.',
   },
   {
-    titulo: 'Rehabilitacion traumato-deportiva',
+    titulo: 'Rehabilitacion Traumato-Deportiva',
     texto: 'Recuperacion de lesiones musculares, articulares y post-quirurgicas con seguimiento kinesico.',
   },
   {
-    titulo: 'Recuperacion post-esfuerzo',
+    titulo: 'Recuperacion Post-Esfuerzo',
     texto: 'Tecnicas para acelerar la recuperacion muscular despues del entrenamiento o la competencia.',
   },
   {
-    titulo: 'Entrenamiento en adultos',
+    titulo: 'Entrenamiento En Adultos',
     texto: 'Fortalecimiento y movilidad pensados para sostener la actividad fisica a cualquier edad.',
   },
   {
-    titulo: 'Vendajes funcionales',
+    titulo: 'Vendajes Funcionales',
     texto: 'Sosten y estabilidad articular para entrenar y competir con menor riesgo de lesion.',
   },
 ];
@@ -45,7 +45,7 @@ export function Services() {
 
         <div className="services__cta">
           <a href={WHATSAPP_LINK} target="_blank" rel="noreferrer" className="btn btn-primary">
-            Reservar evaluacion
+            Solicitar turno
           </a>
         </div>
       </div>

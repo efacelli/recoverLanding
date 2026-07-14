@@ -35,7 +35,7 @@ export function Reviews() {
     <section id="resenas" className="section reviews">
       <div className="container">
         <p className="eyebrow reviews__eyebrow">Opiniones reales</p>
-        <h2 className="display reviews__title">De nuestros pacientes</h2>
+        <h2 className="display reviews__title">Lo que dicen en Google</h2>
 
         <div className="reviews__grid">
           {RESEÑAS.map((r) => (

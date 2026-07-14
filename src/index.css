@@ -10,8 +10,12 @@
   --paper-alt: #f4f7fb;
   --line: #dde5ef;
 
-  --font-display: 'Anton', 'Arial Narrow', sans-serif;
-  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Montserrat', 'Arial Narrow', sans-serif;
+  --font-body: 'Montserrat', system-ui, -apple-system, sans-serif;
+
+  /* Se mantienen para la seccion de Resenas, que no cambia de tipografia */
+  --font-display-reviews: 'Anton', 'Arial Narrow', sans-serif;
+  --font-body-reviews: 'Inter', system-ui, -apple-system, sans-serif;
 
   --angle: 3.2deg; /* angulo del corte diagonal, motivo repetido de la pagina */
   --container: 1160px;
@@ -73,9 +77,9 @@ a {
 
 .display {
   font-family: var(--font-display);
-  font-weight: 400;
+  font-weight: 900;
   letter-spacing: 0.01em;
-  line-height: 0.98;
+  line-height: 1.02;
   text-transform: uppercase;
 }
 

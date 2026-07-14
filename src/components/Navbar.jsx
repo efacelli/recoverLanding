@@ -4,6 +4,7 @@ import { WHATSAPP_LINK } from '../whatsapp';
 const LINKS = [
   { href: '#servicios', label: 'Servicios' },
   { href: '#enfoque', label: 'Enfoque' },
+  { href: '#equipo', label: 'Equipo' },
   { href: '#resenas', label: 'Reseñas' },
   { href: '#instagram', label: 'Instagram' },
   { href: '#obras-sociales', label: 'Obras Sociales' },
@@ -37,7 +38,7 @@ export function Navbar() {
         </nav>
 
         <a href={WHATSAPP_LINK} target="_blank" rel="noreferrer" className="btn btn-primary navbar__cta">
-          Reservar evaluacion
+          Solicitar turno
         </a>
 
         <button
@@ -59,7 +60,7 @@ export function Navbar() {
             </a>
           ))}
           <a href={WHATSAPP_LINK} target="_blank" rel="noreferrer" className="btn btn-primary" onClick={() => setMenuOpen(false)}>
-            Reservar evaluacion
+            Solicitar turno
           </a>
         </div>
       )}
