@@ -1,7 +1,9 @@
 import { Navbar } from './components/Navbar';
+import { WhatsAppFloat } from './components/WhatsAppFloat';
 import { Hero } from './components/Hero';
 import { Services } from './components/Services';
 import { Approach } from './components/Approach';
+import { AboutUs } from './components/AboutUs';
 import { Team } from './components/Team';
 import { Reviews } from './components/Reviews';
 import { Instagram } from './components/Instagram';
@@ -17,6 +19,7 @@ export default function App() {
         <Hero />
         <Services />
         <Approach />
+        <AboutUs />
         <Team />
         <Reviews />
         <Instagram />
@@ -24,6 +27,7 @@ export default function App() {
         <Location />
       </main>
       <Footer />
+      <WhatsAppFloat />
     </>
   );
 }

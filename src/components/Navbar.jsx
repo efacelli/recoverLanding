@@ -3,10 +3,9 @@ import { WHATSAPP_LINK } from '../whatsapp';
 
 const LINKS = [
   { href: '#servicios', label: 'Servicios' },
-  { href: '#enfoque', label: 'Enfoque' },
+  { href: '#quienes-somos', label: 'Quienes Somos' },
   { href: '#equipo', label: 'Equipo' },
   { href: '#resenas', label: 'Reseñas' },
-  { href: '#instagram', label: 'Instagram' },
   { href: '#obras-sociales', label: 'Obras Sociales' },
   { href: '#ubicacion', label: 'Ubicacion' },
 ];

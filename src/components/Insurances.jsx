@@ -1,12 +1,12 @@
 const OBRAS_SOCIALES = [
-  'SMAUNSE',
-  'SancorSalud',
-  'Prevencion Salud',
-  'OSPE',
-  'IOSEP',
-  'Nobis',
-  'Boreal',
-  'JS Jerarquicos',
+  { slug: 'smaunse', nombre: 'SMAUNSE' },
+  { slug: 'sancorsalud', nombre: 'SancorSalud' },
+  { slug: 'prevencion-salud', nombre: 'Prevencion Salud' },
+  { slug: 'ospe', nombre: 'OSPE' },
+  { slug: 'iosep', nombre: 'IOSEP' },
+  { slug: 'nobis', nombre: 'Nobis' },
+  { slug: 'boreal', nombre: 'Boreal' },
+  { slug: 'js-jerarquicos', nombre: 'JS Jerarquicos' },
 ];
 
 export function Insurances() {
@@ -16,13 +16,12 @@ export function Insurances() {
         <p className="eyebrow insurances__eyebrow">Trabajamos con</p>
         <h2 className="display insurances__title">Obras sociales y prepagas</h2>
 
-        <div className="insurances__chips">
+        <div className="insurances__logos">
           {OBRAS_SOCIALES.map((os) => (
-            <span className="chip" key={os}>
-              {os}
-            </span>
+            <div className="insurance-logo" key={os.slug}>
+              <img src={`/obras-sociales/${os.slug}.png`} alt={os.nombre} loading="lazy" />
+            </div>
           ))}
-          <span className="chip chip--muted">Y demas</span>
         </div>
 
         <p className="insurances__note">

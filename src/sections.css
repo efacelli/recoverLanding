@@ -231,21 +231,27 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
-.service-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 26px;
-  width: 34px;
-  height: 4px;
-  background: var(--blue-700);
-  border-radius: 0 0 4px 4px;
-}
-
 .service-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 16px 40px -20px rgba(13, 32, 56, 0.35);
   border-color: var(--blue-300);
+}
+
+.service-card__image {
+  width: 100%;
+  max-width: 180px;
+  aspect-ratio: 3 / 4;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0 auto 16px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+}
+
+.service-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .service-card h3 {
@@ -389,6 +395,12 @@
   font-size: 13.5px;
   color: var(--blue-700);
   font-weight: 600;
+}
+
+.team-card__matricula {
+  font-size: 12px;
+  color: #8492a3;
+  margin-top: 4px;
 }
 
 /* ===== Reviews ===== */
@@ -559,28 +571,41 @@
   margin-bottom: 36px;
 }
 
-.insurances__chips {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-  max-width: 780px;
+.insurances__logos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
-.chip {
-  border: 1.5px solid var(--line);
-  background: var(--paper-alt);
-  color: var(--navy-950);
-  padding: 10px 20px;
-  border-radius: 999px;
-  font-weight: 700;
-  font-size: 14px;
+@media (min-width: 640px) {
+  .insurances__logos {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
-.chip--muted {
-  color: #7a8698;
-  border-style: dashed;
+.insurance-logo {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90px;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.insurance-logo:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px -18px rgba(13, 32, 56, 0.35);
+}
+
+.insurance-logo img {
+  max-width: 100%;
+  max-height: 46px;
+  object-fit: contain;
 }
 
 .insurances__note {
@@ -713,4 +738,81 @@
   font-size: 12.5px;
   color: rgba(255, 255, 255, 0.45);
   margin-top: 10px;
+}
+
+/* ===== WhatsApp flotante ===== */
+.whatsapp-float {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  z-index: 60;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #25d366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px -8px rgba(0, 0, 0, 0.45);
+  transition: transform 0.18s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.08);
+}
+
+/* ===== Quienes Somos ===== */
+.about {
+  background: var(--paper-alt);
+  text-align: center;
+}
+
+.about__title {
+  font-size: clamp(28px, 4vw, 40px);
+  color: var(--navy-950);
+  margin-bottom: 24px;
+}
+
+.about__intro {
+  max-width: 720px;
+  margin: 0 auto 48px;
+  color: #445164;
+  line-height: 1.7;
+  font-size: 15.5px;
+}
+
+.about__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (min-width: 760px) {
+  .about__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.about-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 26px 22px;
+}
+
+.about-card h3 {
+  font-family: var(--font-display);
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 17px;
+  color: var(--blue-700);
+  margin-bottom: 10px;
+}
+
+.about-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #4a5768;
 }

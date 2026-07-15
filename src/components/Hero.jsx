@@ -5,7 +5,7 @@ export function Hero() {
       <div className="hero__overlay" />
 
       <div className="container hero__content">
-        <p className="eyebrow hero__eyebrow">Kinesiologia y readaptacion fisica</p>
+        <p className="eyebrow hero__eyebrow">Centro de rehabilitacion y readaptacion fisica</p>
         <h1 className="display hero__title">
           Te ayudamos<br />a moverte mejor
         </h1>

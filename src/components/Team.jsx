@@ -1,8 +1,8 @@
 const EQUIPO = [
-  { nombre: 'Ignacio', rol: 'Lic. en Kinesiologia y Fisiatria' },
-  { nombre: 'Mariano', rol: 'Lic. en Kinesiologia y Fisiatria' },
-  { nombre: 'Tobias', rol: 'Lic. en Kinesiologia y Fisiatria' },
-  { nombre: 'Antonella', rol: 'Lic. en Kinesiologia y Fisiatria' },
+  { nombre: 'Ignacio', rol: 'Lic. en Kinesiologia y Fisiatria', matricula: 'Matricula N.° ----' },
+  { nombre: 'Mariano', rol: 'Lic. en Kinesiologia y Fisiatria', matricula: 'Matricula N.° ----' },
+  { nombre: 'Tobias', rol: 'Lic. en Kinesiologia y Fisiatria', matricula: 'Matricula N.° ----' },
+  { nombre: 'Antonella', rol: 'Lic. en Kinesiologia y Fisiatria', matricula: 'Matricula N.° ----' },
 ];
 
 export function Team() {
@@ -19,6 +19,7 @@ export function Team() {
               </div>
               <h3 className="team-card__name">{persona.nombre}</h3>
               <p className="team-card__role">{persona.rol}</p>
+              <p className="team-card__matricula">{persona.matricula}</p>
             </article>
           ))}
         </div>
