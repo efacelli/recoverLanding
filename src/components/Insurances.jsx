@@ -7,6 +7,13 @@ const OBRAS_SOCIALES = [
   { slug: 'nobis', nombre: 'Nobis' },
   { slug: 'boreal', nombre: 'Boreal' },
   { slug: 'js-jerarquicos', nombre: 'JS Jerarquicos' },
+  { slug: 'iosfa', nombre: 'IOSFA' },
+  { slug: 'servicio-social-municipal', nombre: 'Servicio Social Municipal' },
+  { slug: 'swiss-medical', nombre: 'Swiss Medical' },
+  { slug: 'medicus', nombre: 'Medicus' },
+  { slug: 'obra-social-futbolistas', nombre: 'Obra Social de Futbolistas' },
+  { slug: 'poder-judicial', nombre: 'Poder Judicial' },
+  { slug: 'red-seguros-medicos', nombre: 'Red de Seguros Medicos' },
 ];
 
 export function Insurances() {

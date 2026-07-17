@@ -1,8 +1,8 @@
 const EQUIPO = [
-  { nombre: 'Ignacio', rol: 'Lic. en Kinesiologia y Fisiatria', matricula: 'Matricula N.° ----' },
-  { nombre: 'Mariano', rol: 'Lic. en Kinesiologia y Fisiatria', matricula: 'Matricula N.° ----' },
-  { nombre: 'Tobias', rol: 'Lic. en Kinesiologia y Fisiatria', matricula: 'Matricula N.° ----' },
-  { nombre: 'Antonella', rol: 'Lic. en Kinesiologia y Fisiatria', matricula: 'Matricula N.° ----' },
+  { nombre: 'Ignacio', foto: 'foto-ignacio.jpg', rol: 'Lic. en Kinesiologia y Fisiatria', matricula: 'Matricula N.° ----' },
+  { nombre: 'Mariano', foto: 'foto-mariano.jpg', rol: 'Lic. en Kinesiologia y Fisiatria', matricula: 'Matricula N.° ----' },
+  { nombre: 'Tobias', foto: 'foto-tobias.jpg', rol: 'Lic. en Kinesiologia y Fisiatria', matricula: 'Matricula N.° ----' },
+  { nombre: 'Antonella', foto: 'foto-antonella.jpg', rol: 'Lic. en Kinesiologia y Fisiatria', matricula: 'Matricula N.° ----' },
 ];
 
 export function Team() {
@@ -14,8 +14,8 @@ export function Team() {
         <div className="team__grid">
           {EQUIPO.map((persona) => (
             <article className="team-card" key={persona.nombre}>
-              <div className="team-card__photo" aria-hidden="true">
-                <span>{persona.nombre[0]}</span>
+              <div className="team-card__photo">
+                <img src={`/equipo/${persona.foto}`} alt={persona.nombre} loading="lazy" />
               </div>
               <h3 className="team-card__name">{persona.nombre}</h3>
               <p className="team-card__role">{persona.rol}</p>
