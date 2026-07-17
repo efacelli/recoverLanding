@@ -1,7 +1,7 @@
 const EQUIPO = [
-  { nombre: 'Ignacio', foto: 'foto-ignacio.jpg', rol: 'Lic. en Kinesiologia y Fisiatria', matricula: 'Matricula N.° ----' },
-  { nombre: 'Mariano', foto: 'foto-mariano.jpg', rol: 'Lic. en Kinesiologia y Fisiatria', matricula: 'Matricula N.° ----' },
-  { nombre: 'Tobias', foto: 'foto-tobias.jpg', rol: 'Lic. en Kinesiologia y Fisiatria', matricula: 'Matricula N.° ----' },
+  { nombre: 'Ignacio', foto: 'foto-ignacio.jpg', rol: 'Lic. en Kinesiologia y Fisiatria', matricula: 'Matricula N.° 376' },
+  { nombre: 'Mariano', foto: 'foto-mariano.jpg', rol: 'Lic. en Kinesiologia y Fisiatria', matricula: 'Matricula N.° 375' },
+  { nombre: 'Tobias', foto: 'foto-tobias.jpg', rol: 'Lic. en Kinesiologia y Fisiatria', matricula: 'Matricula N.° 499' },
   { nombre: 'Antonella', foto: 'foto-antonella.jpg', rol: 'Lic. en Kinesiologia y Fisiatria', matricula: 'Matricula N.° ----' },
 ];
 
