@@ -551,6 +551,7 @@
 .instagram__embed iframe {
   border: none !important;
 }
+/* ===== Hero/Insurances ===== */
 .insurances {
   background: var(--paper);
   text-align: center;
@@ -568,35 +569,38 @@
   margin-bottom: 36px;
 }
 
+/* Celular por defecto (2 columnas, limpio) */
 .insurances__logos {
   display: grid;
-  /* Mantené las columnas que tengas (2, 5 o las que use tu diseño), pero ampliamos el ancho total */
-  grid-template-columns: repeat(5, 1fr); 
-  gap: 24px; /* Subimos de 16px a 24px para que respiren mejor */
-  max-width: 1200px; /* 👈 Subimos de 900px a 1200px para que las tarjetas se agranden */
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 16px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
-/* 👇 AGREGÁ ESTA REGLA JUSTO ABAJO para forzar a los logos a rellenar la tarjeta */
-.insurances__logos img {
-  width: 80% !important;
-  height: auto !important;
-  max-height: 75px !important; /* Evita que logos muy altos deformen la fila */
-  object-fit: contain !important; /* Mantiene la proporción perfecta de la marca */
-}
-
+/* Tablets o pantallas medianas */
 @media (min-width: 640px) {
   .insurances__logos {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
+/* Computadoras (Acá es donde metemos la magia para agrandar) */
 @media (min-width: 900px) {
   .insurances__logos {
     grid-template-columns: repeat(5, 1fr);
+    gap: 24px;         /* Más espacio entre tarjetas en PC */
+    max-width: 1200px; /* Ampliamos el contenedor máximo en PC */
+  }
+
+  /* Escalamos los logos para que rellenen mejor la tarjeta blanca SOLO en PC */
+  .insurance-logo img {
+    max-width: 85% !important;
+    max-height: 70px !important;
   }
 }
 
+/* Estilo de las tarjetas (Se aplica a todos los dispositivos) */
 .insurance-logo {
   background: var(--paper);
   border: 1px solid var(--line);
