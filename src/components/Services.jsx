@@ -44,7 +44,7 @@ export function Services() {
           {SERVICIOS.map((s, i) => (
             <article className="service-card" key={s.titulo} style={{ '--delay': `${i * 60}ms` }}>
               <div className="service-card__image">
-                <img src={`/servicios/${s.slug}.jpg`} alt={s.titulo} loading="lazy" />
+                <img src={`/servicios/${s.slug}.webp`} alt={s.titulo} loading="lazy" />
               </div>
               <h3>{s.titulo}</h3>
               <p>{s.texto}</p>
