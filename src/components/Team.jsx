@@ -2,7 +2,7 @@ const EQUIPO = [
   { nombre: 'Ignacio Anglade', foto: 'foto-ignacio.webp', rol: 'Lic. en Kinesiologia y Fisiatria', matricula: 'Matricula N.° 376' },
   { nombre: 'Mariano Herrera', foto: 'foto-mariano.webp', rol: 'Lic. en Kinesiologia y Fisiatria', matricula: 'Matricula N.° 375' },
   { nombre: 'Tobias Buitrago', foto: 'foto-tobias.webp', rol: 'Lic. en Kinesiologia y Fisiatria', matricula: 'Matricula N.° 499' },
-  { nombre: 'Antonella Rago', foto: 'foto-antonella.jpg', rol: 'Lic. en Kinesiologia y Fisiatria', matricula: 'Matricula N.° ----' },
+  { nombre: 'Antonella Rago', foto: 'foto-antonella.jpg', rol: 'Lic. en Kinesiologia y Fisiatria', matricula: 'Matricula N.° 513' },
 ];
 
 export function Team() {
